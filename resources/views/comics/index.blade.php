@@ -5,6 +5,9 @@
         <div class="row">
             <div class="col-12">
                 <h2 class="mt-4 mb-4">Lista fumetti</h2>
+                @if (session('status'))
+                    <div class="alert alert-success" role="alert">{{session('status')}}</div>
+                @endif
                 <table class="table table-light">
                     <thead>
                       <tr>

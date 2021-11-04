@@ -21,27 +21,27 @@
 
                     <div class="form-group">
                       <label for="title">Title</label>
-                      <input type="text" name="title" class="form-control" id="title" placeholder="Enter comic name">
+                      <input value="{{old('title')}}" type="text" name="title" class="form-control" id="title" placeholder="Enter comic name">
                     </div>
                     <div class="form-group">
                       <label for="description">Description</label>
-                      <textarea type="text" name="description" class="form-control" id="description" placeholder="write a description"></textarea>
+                      <textarea type="text" name="description" class="form-control" id="description" placeholder="write a description">{{old('description')}}</textarea>
                     </div>
                     <div class="form-group">
                         <label for="thumb">Thumb</label>
-                        <input type="text" name="thumb" class="form-control" id="thumb" placeholder="write link">
+                        <input value="{{old('thumb')}}" type="text" name="thumb" class="form-control" id="thumb" placeholder="write link">
                     </div>
                     <div class="form-group">
                         <label for="price">Price</label>
-                        <input type="number" name="price" class="form-control" id="price" placeholder="enter price">
+                        <input value="{{old('price')}}" type="number" name="price" class="form-control" id="price" placeholder="enter price">
                     </div>
                     <div class="form-group">
                       <label for="series">Series</label>
-                      <input type="text" name="series" class="form-control" id="series" placeholder="write series name">
+                      <input value="{{old('series')}}" type="text" name="series" class="form-control" id="series" placeholder="write series name">
                     </div>
                     <div class="form-group">
                       <label for="sale_date">Sale Date</label>
-                      <input type="text" name="sale_date" class="form-control" id="sale_date" placeholder="write date">
+                      <input {{old('sale_date')}} type="date" name="sale_date" class="form-control" id="sale_date" placeholder="write date">
                     </div>
                     <div class="form-group">
                       <label for="type">Type</label>
